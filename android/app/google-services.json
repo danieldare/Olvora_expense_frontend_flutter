@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "508456394522",
+    "project_id": "trackspend-e87ab",
+    "storage_bucket": "trackspend-e87ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508456394522:android:fb4d236c0a90334f50d6a3",
+        "android_client_info": {
+          "package_name": "com.example.frontend_flutter_main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508456394522-jssmp98sk3bmo9jt584n7lmb6uhvmno9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.frontend_flutter_main",
+            "certificate_hash": "cd165298124232a129d2f3f7659be285ac71a1db"
+          }
+        },
+        {
+          "client_id": "508456394522-oikv6io8n63emk7v05ec64a1t0pcvthn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY99vVX0nwb1boVqHic3zVdLYl4aKqt5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508456394522-oikv6io8n63emk7v05ec64a1t0pcvthn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508456394522-d56g5o1ll4stt35cumd49pvn76gsl78j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.frontendFlutterMain"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508456394522:android:118208ab583ae82950d6a3",
+        "android_client_info": {
+          "package_name": "com.olvora.expense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508456394522-5qb7mn1hfupepa9gcu9ia71t1bpko0bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.olvora.expense",
+            "certificate_hash": "cd165298124232a129d2f3f7659be285ac71a1db"
+          }
+        },
+        {
+          "client_id": "508456394522-oikv6io8n63emk7v05ec64a1t0pcvthn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY99vVX0nwb1boVqHic3zVdLYl4aKqt5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508456394522-oikv6io8n63emk7v05ec64a1t0pcvthn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508456394522-d56g5o1ll4stt35cumd49pvn76gsl78j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.frontendFlutterMain"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

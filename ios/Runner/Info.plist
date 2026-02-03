@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Olvora Expense</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Olvora</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- Google Sign-In (required for GIDSignIn; value must match GoogleService-Info.plist CLIENT_ID) -->
+	<key>GIDClientID</key>
+	<string>508456394522-d56g5o1ll4stt35cumd49pvn76gsl78j.apps.googleusercontent.com</string>
+
+	<!-- Privacy Descriptions (Required for App Store) -->
+	<key>NSCameraUsageDescription</key>
+	<string>Olvora needs camera access to scan receipts and capture expense photos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Olvora needs microphone access to record voice notes for expenses.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Olvora uses speech recognition to transcribe your voice notes into text.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Olvora needs photo library access to attach images to your expenses.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Olvora needs permission to save exported reports to your photo library.</string>
+
+	<!-- Background Modes (if needed) -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+
+	<!-- App Transport Security -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+
+	<!-- Prevent screenshots in App Switcher for sensitive data -->
+	<key>UIFileSharingEnabled</key>
+	<false/>
+
+	<!-- Status bar style -->
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+
+	<!-- Supported URL schemes -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<!-- Google Sign-In: reversed client ID (must match GoogleService-Info.plist REVERSED_CLIENT_ID) -->
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.508456394522-d56g5o1ll4stt35cumd49pvn76gsl78j</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>Google Sign-In</string>
+		</dict>
+		<!-- App sharing / deep links -->
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>olvora-expenses</string>
+				<string>olvora</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- Document types for file import -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>CSV File</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.comma-separated-values-text</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Excel File</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>org.openxmlformats.spreadsheetml.sheet</string>
+				<string>com.microsoft.excel.xls</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- Imported UTIs -->
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>org.openxmlformats.spreadsheetml.sheet</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>xlsx</string>
+				</array>
+				<key>public.mime-type</key>
+				<string>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</string>
+			</dict>
+		</dict>
+	</array>
+
+	<!-- Minimum background fetch interval -->
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.olvora.expenses.sync</string>
+	</array>
+</dict>
+</plist>
